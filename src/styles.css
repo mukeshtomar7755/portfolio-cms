@@ -1,0 +1,270 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body { margin: 0; padding: 0px; box-sizing: border-box; padding-top: 72px; background-color: #333;}
+
+.btn:active{border-color: transparent!important;}
+
+/*-------------------------------------- header css start here ---------------------------------*/
+header{position: fixed; left: 0px; right: 0px; top: 0px; height: 72px; background-color: #333; z-index: 11;}
+header .hearder_main{display: flex; align-items: center; justify-content: space-between; line-height: 72px;}
+.hearder_main .rightLink ul{display: flex; align-items: center; list-style: none; margin: 0; padding: 0;}
+.rightLink ul li a{margin-right: 25px; position: relative; font-size: 16px; font-weight: 400; cursor: pointer; color: #fff; text-decoration: none; display: block;}
+.logo .logo_text{margin: 0px; font-size: 50px; background: -webkit-linear-gradient(180deg, #00a9ff, #ff9600); -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient 10s ease infinite; background-size: 400% 400%;}
+.rightLink ul li a:hover{color: #00a9ff;}
+.rightLink ul li a.active{color: #00a9ff;}
+.hamburger{display: none;}
+aside{display: none;}
+/*-------------------------------------- header css end here -----------------------------------*/
+
+
+/*-------------------------------------- landing_page css start here -----------------------------------*/
+
+.Linkbtnonly{color: #00A9FF; text-decoration: none;}
+.bread{width: fit-content; padding: 8px; background: #33333375; border-radius: 10px; backdrop-filter: blur(10px); margin: 0px auto;}
+.home_page{height: calc(100vh - 92px); overflow: hidden;}
+.home_page .home_wapper{ display: flex; align-items: center; justify-content: space-between;}
+.home_wapper .right_wrp{width: 50%; height: 100vh;}
+.home_wapper .right_wrp img{width: 100%; height: 100%; object-fit: cover; transform: rotateY(180deg);}
+.comnbtn{padding: 10px 50px; border-radius: 40px; border: none; background: linear-gradient(90deg, #00a9ff, #ff9600); animation: gradient 10s ease infinite; background-size: 400% 400%; color: #fff; font-size: 18px; font-weight: 500; border: 2px solid #333; transition: 0.5s;}
+.comnbtn:hover{border: 2px solid #00a9ff; color: #fff; background: transparent; letter-spacing: 1px; transition: 0.5s;}
+.left_wrp .heading-title{color: #fff; font-family: open sans, Sans-serif; font-size: 22px; font-weight: 400; text-transform: uppercase;}
+.typed-text{color: #48a4b7; text-transform: uppercase;}
+.typingtext{font-size: 35px;}
+/*-------------------------------------- landing_page css end here -----------------------------------*/
+
+
+/*----------------------------------------- login page css start here -----------------------------------------*/
+.right_form .form_worpper{ padding: 30px; text-align: left; border-radius: 20px; margin-right: 20px; backdrop-filter: blur(10px); color: #fff;}
+.submit{ width: 100%; padding: 8px; border: none; border-radius: 240px; font-size: 18px; font-weight: 600;}
+
+/*----------------------------------------- login page css end here -----------------------------------------*/
+
+/*------------------------------------- page top section css start here -------------------------------------*/
+.topBanner{background: url(../src/assets/img/bg2.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;}
+/*------------------------------------- page top section css start here -------------------------------------*/
+
+/*----------------------------------------- about section css start here -----------------------------------------*/
+.img_wrapper{width: 100%;height: 450px;overflow: hidden;}
+.img_wrapper:hover .mainImg{transform: scale(1.1); transition: 0.5s;}
+.img_wrapper .mainImg{width: 100%; height: 100%; object-fit: contain; transition: 0.5s;}
+.aboutme_wrapper{display: flex; align-items: center;}
+.aboutme_wrapper .left_img{width: 40%; position: relative;}
+.aboutme_wrapper .right_containt{width: 60%;}
+.left_img .socilList{position: absolute; bottom: 10px; left: 15%; padding: 10px; border-radius: 15px; backdrop-filter: blur(5px);}
+.left_img .socilList ul{list-style: none; display: flex; gap: 25px; margin: 0px; padding: 0px; padding-top: 10px;}
+.socilList ul li a{color: #fff;}
+.socilList ul li a .hoverIcon{width: 30px; border: 2px solid #fff; border-radius: 50%; display: block; height: 30px; text-align: center;}
+.socilList ul li a .hoverIcon:hover {transform: rotateY(365deg); transition: 0.5s; color: #00a9ff; border-color: #00a9ff;}
+
+.tvg__info_list li{ margin: 0; padding: 0; width: 100%; margin-bottom: 17px;}
+.tvg__info_list .info__item{display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; font-size: 16px; font-weight: 400;}
+.tvg__info_list .info__item_left{ min-width: 100px;margin-right: 20px;}
+.tvg__info_list ul{margin: 0; padding: 0; list-style-type: none;}
+
+
+/* Timeline container */
+.timeline { position: relative; padding: 0; list-style: none;}
+.timeline li { position: relative; padding: 20px 30px; border-left: 1px solid #00a9ff;}
+/* .timeline li:last-child { border-left: none;} */
+.timeline .timeline-icon { position: absolute; left: -11px; top: 22px; width: 20px; height: 20px; background-color: #212121; border: 1px solid #00a9ff; border-radius: 50%;}
+.timeline .timeline-date { display: block; color: #00a9ff; font-weight: bold; margin-bottom: 5px;}
+.timeline h3 { margin-top: 10px; margin-bottom: 5px; font-size: 1.25rem; font-weight: 600; color: #fff;}
+.timeline p { margin-bottom: 0; color: #b3b3b3;}
+
+
+
+/*---------------------------------------- Skill Title ----------------------------------------*/
+.skill h4 {color: #fff;margin-bottom: 10px;}
+
+/* Progress Bar */
+.progress-container {position: relative;margin-bottom: 40px;}
+progress { width: 100%; height: 5px; background-color: #212121; border: none; border-radius: 10px; overflow: hidden;}
+progress::-webkit-progress-bar { background-color: #212121; border-radius: 10px;}
+progress::-webkit-progress-value { background-color: #00A9FF; border-radius: 10px;}
+progress::-moz-progress-bar { background-color: #00A9FF; border-radius: 10px;}
+.progress-value {position: absolute; bottom: -28px; right: 0; color: #00A9FF; background: #212121; padding: 3px 5px; border-radius: 5px; border: 2px solid #00A9FF; font-size: 10px; font-weight: bold;}
+/*----------------------------------------- about section css end here -----------------------------------------*/
+
+
+/*---------------------------------------- project section css start here ----------------------------------------*/
+
+
+.portfolio__list { display: flex; flex-wrap: wrap; padding: 50px 0px; gap: 5%;}
+.portfolio__item { position: relative; background-size: cover; background-position: center; height: 300px; margin-bottom: 60px; transition: transform 0.3s ease; cursor: pointer; width: 30%; border-radius: 15px; overflow: hidden;}
+.portfolio__item .overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #00A9FF; display: flex; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;}
+.portfolio__item:hover { transform: scale(1.05); }
+.portfolio__item:hover .overlay {opacity: 1;}
+.portfolio__item .overlay span { color: #000; font-size: 20px; font-weight: bold;}
+.category { position: absolute; top: 10px; left: 10px; background-color: #00A9FF; padding: 5px 10px; color: #000; font-weight: bold; border-radius: 20px; font-size: 14px; text-transform: uppercase;}
+.for_img { height: 100%; width: 100%; display: block; object-fit: cover;}
+
+
+.info__item{display: flex; gap: 20px; align-items: center;}
+
+.overlay-bg{position: fixed;width: 100%;height: 100vh;background-color: #00000063;z-index: 999;top: 0px;left: 0px; display: none;}
+.overlay-bg.active{display: block;cursor: zoom-out;}
+.info__item .icon{width: 20px;}
+.info__item .info__item_left{width: 110px;}
+.project-info .links{position: absolute; bottom: 20px;}
+.project-info-container {position: fixed;top: 0;right: -100%;width: 40%;height: 100%;background-color: #333;color: #00A9FF;transition: right 0.5s ease;z-index: 1000;display: flex;flex-direction: column;justify-content: center;padding: 20px;box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);}
+.project-info-container.active {right: 0;}
+.project-info-main-content img { width: 100%; height: auto; margin-bottom: 20px; }
+.project-info h4 {margin-bottom: 20px; text-transform: uppercase; font-size: 30px; font-weight: 700;}
+.project-info ul {list-style: none;padding: 0;}
+.project-info ul li {margin-bottom: 15px;}
+.closer {display: inline-block; padding: 10px 25px; background-color: #00A9FF; color: #333; cursor: pointer; text-transform: uppercase; border-radius: 50px; text-decoration: none;}
+  
+/*---------------------------------------- project section css end here ----------------------------------------*/
+
+/*--------------------------------------- contact us page css start here ---------------------------------------*/
+ 
+.container-div .contact_main{display: flex;}
+.right_form .form_wrapper{padding: 0px 40px; color: #fff;}
+.form-control{    background: hsl(0deg 0% 0% / 28%);
+    border: 1px solid #2b333b;
+    color: #fff;}
+	.form-control::placeholder{color: #fff;}
+	.form-control:focus{background-color: hsl(0deg 0% 0% / 28%); color: #fff;}
+  
+/*--------------------------------------- contact us page css end here ---------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------- color gradient animation css start here   ------------------------------------*/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*---------------------------------------- color gradient animation css end here   ------------------------------------*/
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+	.portfolio__list{padding: 10px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+/*-------------------------------------- header css start here ---------------------------------*/
+.hamburger{display: block;}
+.hearder_main .rightLink{display: none;}
+header{height: 60px; align-content: center;}
+.hamburger .menu_icon{position: relative; width: 25px; height: 18px;}
+.hamburger .menu_icon span{ height: 2.5px; display: block; width: 100%; background: #fff; position: absolute; border-radius: 10px; transition: 0.5s;}
+.hamburger .menu_icon span:nth-child(2){top: 8px; width: 70%; right: 0px;}
+.hamburger .menu_icon span:nth-child(3){top: 16px;}
+.hamburger .menu_icon.active span{transform: rotate(225deg); top: 8px; transition: 0.5s;}
+.hamburger .menu_icon.active span:nth-child(2){opacity: 0; transition: 0.5s;}
+.hamburger .menu_icon.active span:nth-child(3){transform: rotate(-225deg); top: 8px; transition: 0.5s;}
+.overlay{position: absolute; background: #0003; width: 100%; height: calc(100vh - 60px); top: 60px; display: none; z-index: 9999;}
+.overlay.active{display: block;}
+.logo .logo_text{font-size: 30px;}
+.home_wapper .right_wrp{width: 100%; height: 70vh;}
+
+aside{position: fixed; right: -200px; width: 200px;  background: linear-gradient(180deg, #00a9ff, #ff9600); top: 60px; bottom: 0px; transition: 0.5s; z-index: 99999; display: block;}
+aside.active{right: 0px; transition: 0.5s;}
+aside ul{list-style: none; margin: 0px; padding: 0px; text-align: center;}
+aside ul li a{color: #fff; text-decoration: none; padding: 10px 0px; display: block; font-size: 18px; font-weight: 500;}
+.left_wrp{position: absolute; z-index: 1111; bottom: 10px; left: 0px; right: 0px; text-align: center; background: #ffffff61; padding: 10px; backdrop-filter: blur(5px);}
+/*-------------------------------------- header css end here ---------------------------------*/
+
+/*-------------------------------------- landing_page css start here -----------------------------------*/
+.left_wrp .heading-title{font-size: 18px;}
+.selfline{font-size: 12px; margin-bottom: 10px;}
+.typingtext{font-size: 20px; margin-bottom: 5px!important;}
+.left_wrp button{border-color: transparent;}
+/*-------------------------------------- landing_page css end here -----------------------------------*/
+
+/*----------------------------------------- about section css start here -----------------------------------------*/
+.img_wrapper{width: 100%;}
+.py-5{padding: 15px 0px!important;}
+.aboutme_wrapper{display: block;}
+.aboutme_wrapper .left_img{width: 100%; position: relative;}
+.left_img .socilList{width: 100%; text-align: center; left: 0px; right: 0px; bottom: 20px;}
+.left_img .socilList ul{justify-content: center;}
+.aboutme_wrapper .right_containt{width: 100%;}
+.cvbtn{text-align: center;}
+.tvg__info_list .info__item{justify-content: space-between;}
+
+
+/* Adjusting spacing on smaller screens */
+
+.timeline li {padding-left: 30px;}
+.botmedu{margin-top: 30px;}
+.botmedu h2{margin-bottom: 50px!important;}
+
+
+/* Responsive Breakpoint */
+
+.skill {margin-bottom: 30px;}
+.progress-value{padding: 0px 4px;}
+
+
+/*----------------------------------------- about section css end here -----------------------------------------*/
+
+
+/*---------------------------------------- project section css start here ----------------------------------------*/
+.portfolio__list{padding: 20px;display: block;}
+.portfolio__item{width: 100%;margin-bottom: 20px;}
+.project-info-container{width: 100%;}
+/*---------------------------------------- project section css end here ----------------------------------------*/
+
+
+/*--------------------------------------- contact us page css start here ---------------------------------------*/
+.container-div .contact_main{display: block; padding-top: 40px;}
+.left_img{display: none;}
+/*--------------------------------------- contact us page css end here ---------------------------------------*/
+
+
+}

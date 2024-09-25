@@ -1,0 +1,40 @@
+<div class="login_div">
+    <div class="login_wrapper">
+      <div class="container-div">
+        <div class="login_main row">
+          <div class="left_img col-md-8">
+            <div class="img_main">
+              <picture>
+                <img class="w-100" src="../../assets/img/loginimg.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+  
+          <div class="right_form col-md-4 align-content-center">
+            <div class="form_worpper">
+              <form (ngSubmit)="onSubmit()">
+                <h1 class="headlin_login mb-3">Welcome</h1>
+                <div class="usernameEmail mb-2 formleft">
+                  <label for="username" class="mb-1">User Name</label><span class="text-danger"> *</span>
+                  <input type="text" [(ngModel)]="username" class="form-control" id="username" placeholder="Username" name="username"/>
+                  <div *ngIf="emailError" class="text-danger">{{ emailError }}</div>
+                </div>
+                <div class="password_div mb-2 formleft">
+                  <label for="password" class="mb-1">Password</label><span class="text-danger"> *</span>
+                  <input type="password" [(ngModel)]="password" class="form-control" id="password" placeholder="Password" name="password"/>
+                  <div *ngIf="passwordError" class="text-danger">{{ passwordError }}</div>
+                </div>
+                <div class="forgot mb-3 text-end">
+                  <button class="btn text-light p-0" style="outline: none;">Forgot Password?</button>
+                </div>
+                <div class="submit_btn">
+                  <button class="submit" type="submit">Login</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,210 @@
+<div class="topBanner">
+    <div class="topBanner_warpper text-light text-center py-5">
+        <h1>About Me</h1>
+        <div class="breadcrumb_text">
+            <p class="bread"><a class="Linkbtnonly" routerLink="/">Home</a> / About Me</p>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="aboutme py-5">
+        <div class="container">
+            <div class="aboutme_wrapper pb-5">
+                <div class="left_img">
+                    <div class="img_wrapper">
+                        <img class="mainImg" src="../../assets/img/portfol.png" alt="">
+                    </div>
+                    <div class="socilList">
+                        <div class="headline_socil text-light">I'm available on:</div>
+                        <ul>
+                            <li><a href="#"><span class="hoverIcon"><i class="fab fa-facebook-f"></i></span></a></li>
+                            <li><a href="#"><span class="hoverIcon"><i class="fab fa-instagram"></i></span></a></li>
+                            <li><a href="#"><span class="hoverIcon"><i class="fab fa-linkedin-in"></i></span></a></li>
+                            <li><a href="#"><span class="hoverIcon"><i class="fab fa-behance"></i></span></a></li>
+                            <li><a href="#"><span class="hoverIcon"><i class="fab fa-youtube"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_containt">
+                    <div class="container mt-5">
+
+                        <!-- Animated Text Section -->
+                        <div class="mb-5">
+                            <h1 class="mb-3 text-light typingtext">I'M <span class="typed-text"></span><span
+                                    class="cursor blink">&nbsp;</span></h1>
+                        </div>
+
+                        <!-- Info List Section -->
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="text-light tvg__info_list">
+                                    <ul>
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Name:</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.name}}</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Birthdate:</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.dob}}</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Nationality:</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.nationality}}</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Experience:</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.experience}} years</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Address:</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.address}}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="text-light tvg__info_list">
+                                    <ul>
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Languages:</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.Languages}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Phone:</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.Phone}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Email:</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.Email}}
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Linkedin:</div>
+                                                <div class="info__item_right">
+                                                    <a style="color: #fff;" href="{{aboutDb.linkedinId}}">Click Here</a></div>
+                                            </div>
+                                        </li> -->
+                                        <li>
+                                            <div class="info__item">
+                                                <div class="info__item_left">
+                                                    Freelance</div>
+                                                <div class="info__item_right">
+                                                    {{aboutDb.Freelance}}</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Download CV Button -->
+                        <div class="text-left cvbtn mt-2">
+                            <a href="assets/doc/MukeshTomar-resume2024.pdf" class="" download>
+                                <button class="comnbtn"><i class="fa fa-download"></i> Download my CV</button>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container py-5">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2 class="mb-5 text-light">Experience</h2>
+                    <ul class="timeline">
+                      <li *ngFor="let exp of experiences">
+                        <span class="timeline-icon"></span>
+                        <span class="timeline-date"><i class="far fa-calendar-alt"></i> {{ exp.date }}</span>
+                        <h3>{{ exp.position }} — {{ exp.company }}</h3>
+                        <p>{{ exp.description }}</p>
+                      </li>
+                    </ul>
+                  </div>
+              
+                  <div class="col-md-6 botmedu">
+                    <h2 class="mb-5 text-light">Education</h2>
+                    <ul class="timeline">
+                      <li *ngFor="let edu of education">
+                        <span class="timeline-icon"></span>
+                        <span class="timeline-date"><i class="far fa-calendar-alt"></i> {{ edu.date }}</span>
+                        <h3>{{ edu.degree }} — {{ edu.institution }}</h3>
+                        <p>{{ edu.description }}</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+
+            <div class="container py-5">
+                <h2 class="mb-5 text-white">Programming Skills</h2>
+                <div class="row">
+                    <div class="col-md-6" *ngFor="let skill of leftSkills">
+                        <div class="skill">
+                            <h4>{{ skill.name }}</h4>
+                            <div class="progress-container">
+                                <progress [value]="skill.value" max="100"></progress>
+                                <span [ngStyle]="{ right: 'calc(100% - ' + skill.value + '%)' }"
+                                    class="progress-value">{{ skill.value }}%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" *ngFor="let skill of rightSkills">
+                        <div class="skill">
+                            <h4>{{ skill.name }}</h4>
+                            <div class="progress-container">
+                                <progress [value]="skill.value" max="100"></progress>
+                                <span [ngStyle]="{ right: 'calc(100% - ' + skill.value + '%)' }"
+                                    class="progress-value">{{ skill.value }}%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</section>

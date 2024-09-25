@@ -1,0 +1,28 @@
+{
+    "id": 1,
+    "headerData": {
+        "logo": "Mukesh Tomar",
+        "navLink": [
+            {
+                "id": 1,
+                "name": "Home",
+                "routerLink": "home"
+            },
+            {
+                "id": 2,
+                "name": "Skill",
+                "routerLink": "skill"
+            },
+            {
+                "id": 3,
+                "name": "Project",
+                "routerLink": "project"
+            },
+            {
+                "id": 4,
+                "name": "Contact Us",
+                "routerLink": "contactUs"
+            }
+        ]
+    }
+}

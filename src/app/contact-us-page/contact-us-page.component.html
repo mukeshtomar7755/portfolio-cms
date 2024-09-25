@@ -1,0 +1,65 @@
+<div class="topBanner">
+    <div class="topBanner_warpper text-light text-center py-5">
+        <h1>Get in Touch</h1>
+        <div class="breadcrumb_text">
+            <p class="bread"><a class="Linkbtnonly" routerLink="/">Home</a> / Get in Touch</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="contact_div">
+    <div class="contact_wrapper">
+      <div class="container-div">
+        <div class="contact_main">
+          <!-- Left Image Section -->
+          <div class="left_img col-md-8">
+            <div class="img_main">
+              <picture>
+                <img class="w-100" src="assets/img/loginimg.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+  
+          <!-- Right Form Section -->
+          <div class="right_form col-md-4 align-content-center">
+            <div class="form_wrapper">
+              <form (ngSubmit)="onSubmit()">
+                <h1 class="headline_contact mb-3">Contact Us</h1>
+  
+                <!-- Your Name Field -->
+                <div class="name_div mb-2 formleft">
+                  <label for="yourName" class="mb-1">Your Name</label><span class="text-danger"> *</span>
+                  <input type="text" [(ngModel)]="yourName" class="form-control" id="yourName" placeholder="Your Name" name="yourName" required/>
+                  <div *ngIf="nameError" class="text-danger">{{ nameError }}</div>
+                </div>
+  
+                <!-- Email Field -->
+                <div class="email_div mb-2 formleft">
+                  <label for="email" class="mb-1">Email</label><span class="text-danger"> *</span>
+                  <input type="email" [(ngModel)]="email" class="form-control" id="email" placeholder="Your Email" name="email" required/>
+                  <div *ngIf="emailError" class="text-danger">{{ emailError }}</div>
+                </div>
+  
+                <!-- Message Field -->
+                <div class="message_div mb-3 formleft">
+                  <label for="message" class="mb-1">Message</label><span class="text-danger"> *</span>
+                  <textarea [(ngModel)]="message" class="form-control" id="message" placeholder="Your Message" name="message" rows="4" required></textarea>
+                  <div *ngIf="messageError" class="text-danger">{{ messageError }}</div>
+                </div>
+  
+                <!-- Send Message Button -->
+                <div class="submit_btn">
+                  <button class="submit" type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

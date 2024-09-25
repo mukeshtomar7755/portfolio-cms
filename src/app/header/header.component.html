@@ -1,0 +1,31 @@
+<header>
+    <div class="container">
+        <div class="hearder_main">
+            <div class="logo">
+                <a href="#" routerLink="/" style="text-decoration: none; color: #333;"><h1 class="logo_text">Mukesh Tomar</h1></a>
+            </div>
+            <div class="rightLink">
+                <ul class="menu align-center expanded text-center SMN_effect-31">
+                    <li *ngFor="let HeaderLinks of headerLink"><a href="#" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="HeaderLinks.routerLink"><span>{{HeaderLinks.text}}</span></a></li>
+                </ul>
+            </div>
+            <div class="hamburger" (click)="clickEvent()" >
+                <div class="menu_icon" [ngClass]="status ? 'active' : ''">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<aside  [ngClass]="status ? 'active' : ''">
+    <ul class="menu">
+        <li *ngFor="let HeaderLinks of headerLink"><a href="#" (click)="clickEvent()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" [routerLink]="HeaderLinks.routerLink"><span>{{HeaderLinks.text}}</span></a></li>
+        <!-- <li><a href="#" routerLink="/">Home</a></li>
+        <li><a href="#" routerLink="/skill">Skill</a></li>
+        <li><a href="#" routerLink="/project">Project</a></li>
+        <li><a href="#" class="m-0" routerLink="/contactUs">Contact Us</a></li> -->
+    </ul>
+</aside>
+<div class="overlay" (click)="clickEvent()"  [ngClass]="status ? 'active' : ''"></div>

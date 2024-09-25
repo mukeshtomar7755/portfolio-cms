@@ -1,0 +1,87 @@
+<div class="topBanner">
+    <div class="topBanner_warpper text-light text-center py-5">
+        <h1>Portfolio</h1>
+        <div class="breadcrumb_text">
+            <p class="bread"><a class="Linkbtnonly" routerLink="/">Home</a> / Portfolio</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row portfolio__list">
+        <div class="portfolio__item" (click)="openProject(item)" *ngFor="let item of portfolioItems" [ngStyle]="{'background-image': 'url(' + item.imageUrl + ')'}">
+            <div class="for_img"></div>
+            <span class="category">
+                <a href="#" style="text-decoration: none; color: #fff;">{{ item.category }}</a>
+            </span>
+            <div class="overlay">
+                <span>{{ item.title }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-bg" (click)="closeProject()" [class.active]="selectedProject" ></div>
+
+<!-- 
+<div class="portfolio-grid">
+    <div *ngFor="let item of portfolioItems" class="portfolio-item" (click)="openProject(item)">
+      <div class="portfolio-item-image" [ngStyle]="{'background-image': 'url(' + item.imageUrl + ')'}">
+        <span class="portfolio-item-category">{{ item.category }}</span>
+      </div>
+    </div>
+  </div> -->
+  
+  <div class="project-info-container" [class.active]="selectedProject">
+    <div class="project-info-main-content" *ngIf="selectedProject">
+      <img [src]="selectedProject.imageUrl" alt="Portfolio Image">
+      <a *ngIf="selectedProject.category === 'Vimeo'" class="play_btn" [href]="selectedProject.videoLink">
+        <i class="fa fa-play"></i>
+      </a>
+    </div>
+    <div class="project-info">
+      <h4>{{ selectedProject?.title }}</h4>
+      <ul>
+        <li>
+          <div class="info__item">
+            <span class="icon"><i class="far fa-file-alt"></i></span>
+            <div class="info__item_left">Project:</div>
+            <div class="info__item_right">{{ selectedProject?.title }}</div>
+          </div>
+        </li>
+        <li>
+          <div class="info__item">
+            <span class="icon"><i class="far fa-user"></i></span>
+            <div class="info__item_left">Client:</div>
+            <div class="info__item_right">Envato</div>
+          </div>
+        </li>
+        <li>
+          <div class="info__item">
+            <span class="icon"><i class="far fa-hourglass"></i></span>
+            <div class="info__item_left">Duration:</div>
+            <div class="info__item_right">3 Months</div>
+          </div>
+        </li>
+        <li>
+          <div class="info__item">
+            <span class="icon"><i class="fas fa-code"></i></span>
+            <div class="info__item_left">Technologies:</div>
+            <div class="info__item_right">WordPress, JavaScript</div>
+          </div>
+        </li>
+        <li>
+          <div class="info__item">
+            <span class="icon"><i class="fas fa-hand-holding-usd"></i></span>
+            <div class="info__item_left">Budget:</div>
+            <div class="info__item_right">1550 USD</div>
+          </div>
+        </li>
+      </ul>
+      <div class="links">
+        <a class="closer" (click)="closeProject()">Close</a>
+      </div>
+    </div>
+  </div>
+  

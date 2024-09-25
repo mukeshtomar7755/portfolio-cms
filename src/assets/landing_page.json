@@ -1,0 +1,21 @@
+{
+   
+    "userImg":"../assets/img/portfol.png",
+    "social_media_link":[
+        {
+            "id":1,
+            "link_media":"fb",
+            "media-icon":""
+        },
+        {
+            "id":2,
+            "link_media":"fb",
+            "media-icon":""
+        },
+        {
+            "id":3,
+            "link_media":"fb",
+            "media-icon":""
+        }
+    ]
+}
